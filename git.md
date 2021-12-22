@@ -25,6 +25,7 @@ git add                             添加文件到仓库
 git status                          查看当前仓库状态
 git diff                            比较文件的不同
 git commit                          提交暂存区到本地仓库
+git commit --amend                  修改历史log
 git reset                           回退版本
 git rm                              删除工作区文件
 git mv                              移动或者重命名工作区文件
