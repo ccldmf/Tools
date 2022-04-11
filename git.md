@@ -22,6 +22,7 @@ git clone
 * 提交与修改
 ```
 git add                             添加文件到仓库
+git restore --staged                将已添加保存的文件去除
 git status                          查看当前仓库状态
 git diff                            比较文件的不同
 git commit                          提交暂存区到本地仓库
@@ -35,6 +36,7 @@ git log --graph                     查看历史记录中出现的分支，合�
 git log --reverse                   逆向查看历史日志
 git log --author=username --oneline 查看指定用户提交的日志信息
 git blame <file>                    查看指定文件的历史修改记录
+git cherry-pick <commitHash>        将指定patch应用到当前branch
 ```
 * 远程操作
 ```
@@ -51,6 +53,11 @@ git merge (branch_name)             合并branch_name分支到当前工作分支
 git branch                          列出分支
 git checkout -b (branch_name)       创建分支并切换到该分支
 git branch -d (branch_name)         删除指定分支
+```
+* Submodule
+```
+git submodule update --init --recursive
+git submodule sync
 ```
 ### 标签
 达到一个重要的阶段，并希望记住那个特别的提交快照，可以使用 git tag 给它打上标签。
